@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Righteous&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="showcase ">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="background1.mp4" muted autoplay loop ></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis commodi quod quo perferendis vero ipsum perspiciatis corporis consectetur nobis?</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+        
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+        const text = document.querySelector('.text')
+        
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            text.classList.toggle('active')
+        })
+        
+    </script>
+
+</body>
+</html>
